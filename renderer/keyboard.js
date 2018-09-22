@@ -157,9 +157,9 @@ Keyboard.keyboardShow = function(config) {
 
 Keyboard.addImageIcon = function(imgURL) {
   if (isbrowserpreview) { // eslint-disable-line no-undef
-    return org.ekstep.pluginframework.pluginManager.resolvePluginResource("org.ekstep.keyboard", "1.0", imgURL);
+    return org.ekstep.pluginframework.pluginManager.resolvePluginResource("org.ekstep.keyboard", "1.1", imgURL);
   } else {
-    return 'file:///' + EkstepRendererAPI.getBaseURL() + "content-plugins/org.ekstep.keyboard-1.0/" + imgURL;
+    return 'file:///' + EkstepRendererAPI.getBaseURL() + "content-plugins/org.ekstep.keyboard-1.1/" + imgURL;
   }
 };
 
