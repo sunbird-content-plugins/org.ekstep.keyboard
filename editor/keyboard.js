@@ -11,7 +11,7 @@ angular.module('keyBoardApp', [])
     scope: {
       data: '='
     },
-    templateUrl: ecEditor.resolvePluginResource('org.ekstep.keyboard', '1.1', 'editor/keyboard.directive.html'),
+    templateUrl: ecEditor.resolvePluginResource('org.ekstep.keyboard', '1.0', 'editor/keyboard.directive.html'),
     link: function(scope) {
       scope.keyboardTypes = ['Device', 'English', 'Custom'];
       if (!_.isUndefined(scope.data) && !_.isUndefined(scope.data.keyboardType))
